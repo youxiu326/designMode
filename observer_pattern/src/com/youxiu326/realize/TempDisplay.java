@@ -14,7 +14,7 @@ public class TempDisplay implements Observer, DisplayElement {
 
     public TempDisplay(Subject weatherData) {
         this.weatherData = weatherData;
-        this.weatherData.registerObserver(this::update);
+        this.weatherData.registerObserver(this);
     }
 
     @Override
